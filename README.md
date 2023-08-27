@@ -6,3 +6,22 @@ The first JSON Ads where it simulates taking charge of a JSON file and displays 
 The second LOCAL ADVERTISING page simulates the use of an array of objects. 
 
 The insert ads page is only demonstrative, it does not save in a database.
+
+
+- index.html
+- addAnnouncement.html
+- announcementJSON.html
+- announcementLOCAL.html
+- categories.html
+- css/
+  - style.css
+- images/
+  - Various Images
+- js/
+  - home.js
+  - common.js
+  - addAnnouncement.js
+  - announcementJSON.js
+  - announcementLOCAL.js
+-mock/
+  - data.json
