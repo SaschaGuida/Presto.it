@@ -1,0 +1,92 @@
+[
+    {
+        "title": "Auto in vendita",
+        "description": "Auto in ottime condizioni, perfetta per gli appassionati di guida.",
+        "price": "200",
+        "category": "Auto",
+        "type": "Vendo",
+        "date": "10/08/2023",
+        "image": "./images/auto.jpg"
+    },
+    {
+        "title": "Elettronica cercasi",
+        "description": "Cerco dispositivi elettronici come smartphone e tablet. Pagamento in contanti.",
+        "price": "150",
+        "category": "Elettronica",
+        "type": "Cerco",
+        "date": "11/08/2023",
+        "image": "./images/auto.jpg"
+    },
+    {
+        "title": "Moto in vendita",
+        "description": "Moto usata ma ben tenuta, ideale per gli amanti delle due ruote.",
+        "price": "50",
+        "category": "Moto",
+        "type": "Vendo",
+        "date": "12/08/2023",
+        "image": "./images/auto.jpg"
+    },
+    {
+        "title": "Abbigliamento cercasi",
+        "description": "Cerco abbigliamento usato in buone condizioni. Preferibilmente taglia M.",
+        "price": "300",
+        "category": "Abbigliamento",
+        "type": "Cerco",
+        "date": "13/08/2023",
+        "image": "./images/auto.jpg"
+    },
+    {
+        "title": "Attrezzatura sportiva in vendita",
+        "description": "Vendo attrezzi sportivi per allenamenti a casa. Ottimo stato.",
+        "price": "1200",
+        "category": "Sport",
+        "type": "Vendo",
+        "date": "14/08/2023",
+        "image": "./images/auto.jpg"
+    },
+    {
+        "title": "Attrezzatura da giardinaggio cercasi",
+        "description": "Sto cercando attrezzi da giardinaggio per la cura del mio giardino.",
+        "price": "80",
+        "category": "Giardinaggio",
+        "type": "Cerco",
+        "date": "15/08/2023",
+        "image": "./images/auto.jpg"
+    },
+    {
+        "title": "Arredamento per la casa in vendita",
+        "description": "Mobili e arredi per la casa in vendita a prezzi convenienti.",
+        "price": "750",
+        "category": "Casa",
+        "type": "Vendo",
+        "date": "16/08/2023",
+        "image": "./images/auto.jpg"
+    },
+    {
+        "title": "Accessori da cucina cercasi",
+        "description": "Sto cercando accessori da cucina come pentole e padelle.",
+        "price": "100",
+        "category": "Cucina",
+        "type": "Cerco",
+        "date": "17/08/2023",
+        "image": "./images/auto.jpg"
+    },
+    {
+        "title": "Auto in vendita",
+        "description": "Auto usata in ottime condizioni, appena tagliandata.",
+        "price": "500",
+        "category": "Auto",
+        "type": "Vendo",
+        "date": "18/08/2023",
+        "image": "./images/auto.jpg"
+    },
+    {
+        "title": "Elettronica cercasi",
+        "description": "Cerco dispositivi elettronici come laptop e fotocamere.",
+        "price": "180",
+        "category": "Elettronica",
+        "type": "Cerco",
+        "date": "19/08/2023",
+        "image": "./images/auto.jpg"
+    }
+]

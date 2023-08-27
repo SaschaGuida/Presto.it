@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRESTO.IT - Inserisci Annunci</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-white fixed-top shadow ">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="./index.html">
+                <img src="./images/logo1.png" alt="Presto.it" class="mr-2">
+                <h2 class="m-0">Presto.it</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./announcementJSON.html">Annunci JSON</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./announcementLOCAL.html">Annunci JS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categorie
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Categorie</a></li>
+                            <li><a class="dropdown-item" href="#">Auto</a></li>
+                            <li><a class="dropdown-item" href="#">Elettronica</a></li>
+                            <li><a class="dropdown-item" href="#">Moto</a></li>
+                            <li><a class="dropdown-item" href="#">Abbigliamento</a></li>
+                            <li><a class="dropdown-item" href="#">Sport</a></li>
+                            <li><a class="dropdown-item" href="#">Giardinaggio</a></li>
+                            <li><a class="dropdown-item" href="#">Casa</a></li>
+                            <li><a class="dropdown-item" href="#">Cucina</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profilo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn" href="./addAnnouncement.html">Crea Annuncio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container-fluid announcements-header">
+            <div class="row">
+                <div class="col-12 col-md-6 text-center position-relative align-items-center custom-row">
+                    <img src="./images/annuncifoto.jpg" alt="Immagine" class="img-fluid custom-image">
+                    <h1 class="custom-h1">Inserisci il tuo <span>annuncio</span></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Inserisci un nuovo annuncio</h2>
+                <form id="announcementForm">
+                    <div class="mb-3">
+                        <label for="titleInput" class="form-label">Titolo Annuncio</label>
+                        <input type="text" class="form-control" id="titleInput" name="title" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="descriptionInput" class="form-label">Descrizione</label>
+                        <textarea class="form-control" id="descriptionInput" name="description" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="priceInput" class="form-label">Prezzo</label>
+                        <input type="number" class="form-control" id="priceInput" name="price" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="categoryInput" class="form-label">Categoria</label>
+                        <select class="form-select" id="categoryInput" name="category" required>
+                            <option value="">Seleziona una categoria</option>
+                            <!-- Opzioni delle categorie possono essere generate dinamicamente qui -->
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="typeInput" class="form-label">Tipo</label>
+                        <select class="form-select" id="typeInput" name="type" required>
+                            <option value="Vendo">Vendo</option>
+                            <option value="Cerco">Cerco</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="imageInput" class="form-label">Immagine</label>
+                        <input type="file" class="form-control" id="imageInput" name="image" accept="image/*" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Inserisci Annuncio</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    <!-- Footer Section -->
+    <footer class="footer mt-5 pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <h4>Get In Touch</h4>
+                    <p>Contattaci per ulteriori informazioni:</p>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-phone"></i> +123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> info@presto.it</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Via Example 123, Città</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul class="quick-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Categorie</a></li>
+                        <li><a href="#">Annunci</a></li>
+                        <li><a href="#">Contatti</a></li>
+                        <li><a href="#">Termini e Condizioni</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h4>Newsletter</h4>
+                    <p>Iscriviti alla nostra newsletter:</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Inserisci la tua email">
+                        <button type="submit">Iscriviti</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p>&copy; 2023 PRESTO.IT. Tutti i diritti riservati.</p>
+                    <p>Powered by: SaschaGuida</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/addAnnouncement.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- 
+
+|￣￣￣￣￣￣￣ |  
+|Sascha-WebDev|
+|＿＿＿＿＿ _＿_|
+(\__/) || 
+(•ㅅ•) || 
+/ 　 づ
+
+-->

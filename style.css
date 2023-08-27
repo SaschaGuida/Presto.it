@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --main: #00b98e;
+    --main-dark: #02a781;
+    --main-light: #26e6b9;
+    --white: #fafafa;
+    --dark: #212529;
+    --neutral: #666565;
+    --blue: #124faa; 
+}
+
+* {
+    font-family: 'Heebo', sans-serif;
+}
+
+body {
+    background-color: var(--white);
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    color: var(--main);
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: var(--main);
+    color: var(--white);
+}
+
+.navbar-brand {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.navbar-brand h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.navbar-nav .nav-link {
+    color: var(--dark);
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--main-light);
+}
+
+.navbar .nav-link.active {
+    color: var(--main-dark);
+}
+
+.nav-link.btn {
+    background-color: var(--main);
+    color: var(--white);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link.btn:hover {
+    background-color: var(--main-dark);
+    color: var(--white);
+}
+
+.dropdown-menu {
+    background-color: var(--white);
+    border: none;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    color: var(--dark);
+}
+
+.dropdown-item:hover {
+    background-color: var(--main-light);
+    color: var(--dark);
+}
+
+.banner {
+    margin-top: 200px;
+}
+
+/* bottoni del carosello */
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--main);
+    color: var(--white);
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: var(--main-dark);
+}
+
+.swiper-button-next {
+    top: calc(50% + 60px);
+}
+
+.nav-link-btn.btn {
+    background-color: var(--main);
+    color: var(--white);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    width: 130px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* stile card */
+
+.category-card {
+    text-align: center;
+}
+
+.card {
+    border: 1px dashed #00b98e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    height: 100%;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.category-icon {
+    border: 2px dashed #00b98e;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 30px;
+    color: var(--main-dark);
+    margin-bottom: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* hover card */
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* card annunci */
+
+.card-announcement {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.5s;
+    box-shadow: 10px 10px 12px 0px rgb(207, 207, 207); 
+    max-width: 350px;
+    margin: auto;
+}
+
+    .card-announcement:hover {
+        box-shadow: 0px 10px 12px 5px rgb(207, 207, 207); 
+    }
+
+    .card-announcement .details {
+        padding: 40px 20px;
+        background-color: var(--white);
+    }
+
+    .card-announcement .image .type-announcement {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        padding: 5px 10px;
+        border-radius: 10px;
+        font-weight: 600;
+    }
+
+    .card-announcement .image {
+        position: relative;
+        height: 150px;
+        overflow: hidden;
+    }
+    
+    .card-announcement .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-announcement:hover img {
+        transform: scale(1.2);
+    }
+
+    .card-announcement .footer-announcement div {
+        color: var(--main);
+        border-right: 1px dashed var(--main);
+        border-top: 1px dashed var(--main);
+    }
+
+    .card-announcement .footer div:last-child {
+        border-right: none;
+    }
+
+/* categories-announcement */
+
+.catm {
+    margin-top: 200px;
+
+}
+
+/* Stili per le card delle categorie */
+.category-card-announc {
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.card-announc {
+    border: 1px dashed var(--main);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.card-announc:hover {
+    transform: scale(1.05);
+}
+
+.category-icon-announc {
+    border: 2px dashed var(--main);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: var(--main-dark);
+    margin-bottom: 15px;
+}
+
+.card-title-announc {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* da sistemare */
+.custom-row {
+    width: 100%;
+}
+
+.announcements-header .custom-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.announcements-header .custom-h1 {
+    position: absolute;
+    bottom: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.search-panel {
+    top: -75px;
+    width: 100%;
+}
+
+
+.form-control-sm {
+    height: 30px;
+    font-size: 14px;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.75rem;
+    font-size: 14px;
+    background-color: var(--blue);
+    border-radius: 10px;
+}
+
+.search-panel {
+    background-color: var(--main);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* Footer styling */
+.footer {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 20px 0;
+}
+
+
+.footer h4 {
+    margin-bottom: 20px;
+    color: var(--main-dark);
+}
+
+.contact-list li, .quick-links li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.contact-list i {
+    margin-right: 10px;
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: var(--white);
+    transition: color 0.3s;
+}
+
+.quick-links a:hover {
+    color: var(--main-light);
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.newsletter-form input[type="email"] {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter-form button {
+    background-color: var(--main);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: var(--main-dark);
+}
+
+
+
+
+
+
+
+
+
+/* Media Q */
+
+@media screen and (min-width: 992px) {
+    .navbar {
+        margin: 40px 100px 0;
+        transition: margin 0.3s ease;
+    }
+
+    .navbar.scrolled {
+        margin: 0;
+        transition: margin 0.3s ease;
+    }
+}
+
+/* Stili per la disposizione delle card in base alle dimensioni dello schermo */
+@media (max-width: 991.98px) {
+    .category-card {
+        flex-basis: calc(33.33% - 20px);
+    }
+}
+
+@media (min-width: 992px) {
+    .category-card {
+        flex-basis: calc(25% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .announcements-header .custom-h1 {
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    
+    .search-panel {
+        top: -60px;
+        width: 100%;
+    }
+}
+
+
+/* 
+
+|￣￣￣￣￣￣￣ |  
+|Sascha-WebDev|
+|＿＿＿＿＿ _＿_|
+(\__/) || 
+(•ㅅ•) || 
+/ 　 づ
+
+*/
